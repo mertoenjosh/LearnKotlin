@@ -4,7 +4,7 @@
 //}
 
 // simplified version: if constructor has no private modifiers
-class Car(val make: String, val model: String, var color: String) {
+class Car1(val make: String, val model: String, var color: String) {
 
     fun accelerate() {
         println("Vroom Vroom")
@@ -15,7 +15,7 @@ class Car(val make: String, val model: String, var color: String) {
     }
 }
 
-class Truck (val make: String, val model: String, val towingCapacity: Int) {
+class Truck1(val make: String, val model: String, val towingCapacity: Int) {
     fun tow() {
         println("Taking the horses to the rodeo")
     }
@@ -30,13 +30,13 @@ fun main(args: Array<String>) {
 //    var car = CarDemo("Toyota", "Hillux")
 //    println(car.make)
 
-    val car = Car("Toyota", "Avalon", "red")
+    val car = Car1("Toyota", "Avalon", "red")
     println(car.make)
     println(car.model)
     car.accelerate()
     car.details()
 
-    val truck = Truck("Ford", "F-150", 1000)
+    val truck = Truck1("Ford", "F-150", 1000)
     truck.tow()
     truck.details()
 }

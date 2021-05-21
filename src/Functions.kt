@@ -21,4 +21,10 @@ fun main(args: Array<String>) {
 
     println("Dath vader faced off against ${calculateNunGoodGuys(23,5)} rebel scum")
 
+//    default params
+    fun vaderIsFeeling(mood: String = "Dangerous") {
+        println("Vader is feeling $mood")
+    }
+    vaderIsFeeling()
+    vaderIsFeeling("Angry")
 }
